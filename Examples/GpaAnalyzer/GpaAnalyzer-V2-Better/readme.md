@@ -26,6 +26,8 @@ The functionality is the same as Version 1, but makes some improvements to the c
  * Hard-coded implementation of ConvertLetterGrad (not extensible or flexible)
  * Hard-coded names for the data files
  * The CourseSection and Registration class and variable could have been identifiers.
-  
+ * Class data members, methods, and private variables are not as tightly constrained as they should be
+ * There is some parameter passing that is not as effecient as it could be.
+
  
  
