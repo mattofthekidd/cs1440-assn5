@@ -16,6 +16,7 @@ The functionality is the same as Version 1, but makes some improvements to the c
  * Added the ConvertLetterGradeToScore function to both the Student and CourseSection class. (Yes, this is not a great solution because it duplicates the code.  We'll solve this a better duplicate code problem later.)
 
 ## Some Remaining Problems
+ * The identifiers for private data members don't follow common C++ style guidelines
  * split is a re-usable piece of code, but is in a reusable place
  * The ConvertLetterGrade functionality exists in two places
  * The management of the student list is awkward and introduces some hidden dependencies

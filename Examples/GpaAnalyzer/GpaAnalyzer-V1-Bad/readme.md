@@ -9,6 +9,7 @@ Initial version, not very high quality
 ## Open Problems
  * The main.cpp contains too much stuff that is not directly related to each other -- It lack cohesion
  * The Student, Registration, and CourseSection are localized into their own files and are therefore not reusable
+ * The identifiers for private data members don't follow common C++ style guidelines
  * split is a re-usable piece of code, but is in a reusable place
  * The management of the student list is awkward and introduces some hidden dependencies
  * The management of the courseSection list is awkward and introduces some hidden dependencies
