@@ -7,8 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Registration.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CourseSection.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Registration.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Student.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CourseSection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Student.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
