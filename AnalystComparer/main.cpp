@@ -1,9 +1,12 @@
+#include "Comparer.h"
+
 int main(int argv, char* argc[])
 {
-    // Keep the main function simple.  It's responsibility should be limited to handle
-    // the program argument, creating the initial object(s), stimulating them to do
-    // whatever they need to do.
+    // Declare (and create) a comparer object
+    Comparer comparer;
 
-    // For example, think about defining a Comparer class, creating an instance of that
-    // class here, and then have it load the analyst data and doing the comparison.
+    // Have the comparer load all the input files and then do the comparison,
+    // which creates the output file
+    if (comparer.load(argv, argc)==0)
+        comparer.compare();
 }

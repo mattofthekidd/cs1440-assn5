@@ -123,6 +123,33 @@ AnalystComparer/fast:
 	$(MAKE) -f CMakeFiles/AnalystComparer.dir/build.make CMakeFiles/AnalystComparer.dir/build
 .PHONY : AnalystComparer/fast
 
+Comparer.o: Comparer.cpp.o
+
+.PHONY : Comparer.o
+
+# target to build an object file
+Comparer.cpp.o:
+	$(MAKE) -f CMakeFiles/AnalystComparer.dir/build.make CMakeFiles/AnalystComparer.dir/Comparer.cpp.o
+.PHONY : Comparer.cpp.o
+
+Comparer.i: Comparer.cpp.i
+
+.PHONY : Comparer.i
+
+# target to preprocess a source file
+Comparer.cpp.i:
+	$(MAKE) -f CMakeFiles/AnalystComparer.dir/build.make CMakeFiles/AnalystComparer.dir/Comparer.cpp.i
+.PHONY : Comparer.cpp.i
+
+Comparer.s: Comparer.cpp.s
+
+.PHONY : Comparer.s
+
+# target to generate assembly for a file
+Comparer.cpp.s:
+	$(MAKE) -f CMakeFiles/AnalystComparer.dir/build.make CMakeFiles/AnalystComparer.dir/Comparer.cpp.s
+.PHONY : Comparer.cpp.s
+
 Utils.o: Utils.cpp.o
 
 .PHONY : Utils.o
@@ -186,6 +213,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AnalystComparer"
+	@echo "... Comparer.o"
+	@echo "... Comparer.i"
+	@echo "... Comparer.s"
 	@echo "... Utils.o"
 	@echo "... Utils.i"
 	@echo "... Utils.s"

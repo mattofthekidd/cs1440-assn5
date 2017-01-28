@@ -80,6 +80,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/swc/Dropbox/UnderGit/cs1440s17-shared/AnalystComparer/Comparer.cpp">
+			<Option target="AnalystComparer"/>
+		</Unit>
+		<Unit filename="/Users/swc/Dropbox/UnderGit/cs1440s17-shared/AnalystComparer/Comparer.h">
+			<Option target="AnalystComparer"/>
+		</Unit>
+		<Unit filename="/Users/swc/Dropbox/UnderGit/cs1440s17-shared/AnalystComparer/Constants.h">
+			<Option target="AnalystComparer"/>
+		</Unit>
 		<Unit filename="/Users/swc/Dropbox/UnderGit/cs1440s17-shared/AnalystComparer/Utils.cpp">
 			<Option target="AnalystComparer"/>
 		</Unit>

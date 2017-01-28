@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/AnalystComparer.dir/main.cpp.o"
   "CMakeFiles/AnalystComparer.dir/Utils.cpp.o"
+  "CMakeFiles/AnalystComparer.dir/Comparer.cpp.o"
   "AnalystComparer.pdb"
   "AnalystComparer"
 )
