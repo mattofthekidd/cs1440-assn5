@@ -1,5 +1,7 @@
 #include "Comparer.h"
 
+// Note that the two parameters give you an array of program arguments and the count of things in that array.
+
 int main(int argc, char* argv[])
 {
     // Declare (and create) a comparer object
