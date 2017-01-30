@@ -66,26 +66,34 @@ void FormattedCell::write(std::ostream& outputStream)
 
 void FormattedCell::setupFormattedValue(std::ostream& outputStream)
 {
-    std::stringstream ss;
 
-    switch (m_columnDefinition->getDataType())
+    if (m_columnDefinition->getDataType() == ColumnDefinition::String)
     {
-        case ColumnDefinition::String:
-            ss <<  *((std::string *) m_value);
-            break;
-        case ColumnDefinition::Integer:
-            ss <<  *((int *) m_value);
-            break;
-        case ColumnDefinition::Money:
-            ss <<  ((float) *((int *) m_value)) / 100.0;
-            break;
-        case ColumnDefinition::FixedPrecision:
-            ss << std::fixed << std::setprecision(m_columnDefinition->getPrecision())
-               << *((float *) m_value);
-            break;
+        m_formattedValue = *(std::string *) m_value;
+    }
+    else
+    {
+        std::stringstream ss;
+        switch (m_columnDefinition->getDataType()) {
+            case ColumnDefinition::Integer:
+                ss << *((int *) m_value);
+                ss >> m_formattedValue;
+                break;
+            case ColumnDefinition::Money:
+                ss << std::fixed << std::setprecision(2);
+                ss << ((float) *((int *) m_value)) / 100.0;
+                ss >> m_formattedValue;
+                break;
+            case ColumnDefinition::FixedPrecision:
+                ss << std::fixed << std::setprecision(m_columnDefinition->getPrecision())
+                   << *((float *) m_value);
+                ss >> m_formattedValue;
+                break;
+            default:
+                break;
+        }
     }
 
-    ss >> m_formattedValue;
 }
 
 void FormattedCell::setupWidthAndJustification(std::ostream &outputStream)
