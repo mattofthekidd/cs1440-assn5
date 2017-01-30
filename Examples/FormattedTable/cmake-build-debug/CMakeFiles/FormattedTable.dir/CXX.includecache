@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.cpp
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.cpp
+iostream
+-
 iomanip
 -
 ColumnDefinition.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
 string
 -
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.cpp
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.cpp
 iostream
 -
 sstream
@@ -24,53 +26,53 @@ sstream
 iomanip
 -
 FormattedCell.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.h
 ostream
 -
 string
 -
 ColumnDefinition.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.cpp
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.cpp
 iostream
 -
 iomanip
 -
 FormattedRow.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.h
 FormattedTable.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.h
 ostream
 -
 FormattedCell.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedCell.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.cpp
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.cpp
 iostream
 -
 iomanip
 -
 FormattedTable.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
 ostream
 -
 ColumnDefinition.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/ColumnDefinition.h
 FormattedRow.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedRow.h
 
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/main.cpp
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/main.cpp
 iostream
 -
 fstream
 -
 FormattedTable.h
-/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
+Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/FormattedTable.h
 

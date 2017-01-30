@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/FormattedTable.dir/main.cpp.o"
-  "CMakeFiles/FormattedTable.dir/ColumnDefinition.cpp.o"
-  "CMakeFiles/FormattedTable.dir/FormattedRow.cpp.o"
-  "CMakeFiles/FormattedTable.dir/FormattedCell.cpp.o"
-  "CMakeFiles/FormattedTable.dir/FormattedTable.cpp.o"
+  "CMakeFiles/FormattedTable.dir/main.cpp.obj"
+  "CMakeFiles/FormattedTable.dir/ColumnDefinition.cpp.obj"
+  "CMakeFiles/FormattedTable.dir/FormattedRow.cpp.obj"
+  "CMakeFiles/FormattedTable.dir/FormattedCell.cpp.obj"
+  "CMakeFiles/FormattedTable.dir/FormattedTable.cpp.obj"
   "FormattedTable.pdb"
-  "FormattedTable"
+  "FormattedTable.exe"
+  "FormattedTable.exe.manifest"
+  "libFormattedTable.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

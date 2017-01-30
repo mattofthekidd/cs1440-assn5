@@ -1,8 +1,8 @@
-# Install script for directory: /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable
+# Install script for directory: Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/FormattedTable")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FormattedTable/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

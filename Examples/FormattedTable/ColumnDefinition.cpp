@@ -2,6 +2,7 @@
 // Created by Stephen Clyde on 1/19/17.
 //
 
+#include <iostream>
 #include <iomanip>
 #include "ColumnDefinition.h"
 
