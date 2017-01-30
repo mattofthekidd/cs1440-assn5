@@ -8,17 +8,17 @@
 #include "Comparer.h"
 #include "Utils.h"
 
-int Comparer::load(int argv, char* argc[])
+int Comparer::load(int argc, char* argv[])
 {
-    if (argv<3)
+    if (argc<3)
     {
         std::cout << "Invalid parameters" << std::endl;
         std::cout << "usage: AnalystComparer <output file> <input file 1> <input file 2> ..." << std::endl;
         return -1;
     }
 
-    m_outputFilename = argc[1];
-    m_analystCount = argv - 2;
+    m_outputFilename = argv[1];
+    m_analystCount = argc - 2;
     // TODO: Allocate a container, like an array of pointers, to hold the analysts
     //
     // Example Code:
@@ -27,7 +27,7 @@ int Comparer::load(int argv, char* argc[])
     int analystIndex = 0;
     for (int i = 0; i < m_analystCount; i++)
     {
-        std::ifstream inputStream(argc[2 + analystIndex]);
+        std::ifstream inputStream(argv[2 + analystIndex]);
 
         // TODO: Create a new analyst, load it from the input stream, and put it into the container if that load succeeded
         //
