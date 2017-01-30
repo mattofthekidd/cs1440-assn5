@@ -27,6 +27,7 @@ void Example1()
         row->addCell(new FormattedCell(name));
         row->addCell(new FormattedCell(age));
         row->addCell(new FormattedCell(salary));
+        table.addRow(row);
     }
     inputStream.close();
 
