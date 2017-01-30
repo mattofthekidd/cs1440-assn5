@@ -2,6 +2,8 @@
 // Created by Stephen Clyde on 1/16/17.
 //
 
+#include <algorithm>
+#include <string>
 #include <sstream>
 #include <fstream>
 #include "Utils.h"
