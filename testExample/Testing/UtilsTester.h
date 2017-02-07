@@ -11,7 +11,9 @@ public:
     void testForNormalCases();
     void testForBadMargin();
     void testForZeros();
+    void testForMaxDouble();
     void testForInfinity();
+    void testForNegativeNumbers();
 
 };
 

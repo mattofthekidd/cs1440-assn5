@@ -8,6 +8,10 @@ int main() {
     UtilsTester utilsTester;
     utilsTester.testForNormalCases();
     utilsTester.testForBadMargin();
+    utilsTester.testForZeros();
+    utilsTester.testForMaxDouble();
+    utilsTester.testForInfinity();
+    utilsTester.testForNegativeNumbers();
 
     return 0;
 }
