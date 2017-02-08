@@ -67,13 +67,13 @@ char Triangle::getTriangleType() const
             double b = m_edges[1]->getLength();
             double c = m_edges[2]->getLength();
             // If all three side are the same, then its an equilateral
-            if ( appromixatelyEquals(a,b,m_edgeLengthThreshold)  && appromixatelyEquals(b,c,m_edgeLengthThreshold)) {
+            if (approximatelyEquals(a, b, m_edgeLengthThreshold)  && approximatelyEquals(b, c, m_edgeLengthThreshold)) {
                 result = 'E';
             }
             // If any two sides are the same, then its an isosceles
-            else if (appromixatelyEquals(a,b,m_edgeLengthThreshold) ||
-                     appromixatelyEquals(b,c,m_edgeLengthThreshold) ||
-                     appromixatelyEquals(c,c,m_edgeLengthThreshold))
+            else if (approximatelyEquals(a, b, m_edgeLengthThreshold) ||
+                    approximatelyEquals(b, c, m_edgeLengthThreshold) ||
+                    approximatelyEquals(c, c, m_edgeLengthThreshold))
             {
                 result = 'I';
             }

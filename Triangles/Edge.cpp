@@ -119,5 +119,5 @@ bool Edge::isParallelTo(const Edge &otherEdge)
 bool Edge::areSlopesEquivalent(double slope1, double slope2) const
 {
     return (slope1==INFINITY && slope2==INFINITY) ||
-           appromixatelyEquals(slope1, slope2, m_slopeMarginOfError);
+            approximatelyEquals(slope1, slope2, m_slopeMarginOfError);
 }

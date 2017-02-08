@@ -39,7 +39,7 @@ void TriangleTester::testFirstConstructor()
         return;
     }
 
-    if (!appromixatelyEquals(t.computerArea(), 9.35414, 0.001))
+    if (!approximatelyEquals(t.computerArea(), 9.35414, 0.001))
     {
         std::cout << "Triangle: unexpected area of "
                  << t.computerArea() << std::endl;
@@ -119,7 +119,7 @@ void TriangleTester::testEquilateralTriangles()
         return;
     }
 
-    if (!appromixatelyEquals(t1.computerArea(), 173.205, 0.001))
+    if (!approximatelyEquals(t1.computerArea(), 173.205, 0.001))
     {
         std::cout << "Triangle: unexpected area of "
                  << t1.computerArea() << std::endl;

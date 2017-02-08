@@ -60,7 +60,7 @@ double convertStringToDouble(const std::string& s, bool* valid)
     return result;
 }
 
-bool appromixatelyEquals(double d1, double d2, double margin)
+bool approximatelyEquals(double d1, double d2, double margin)
 {
     return fabs(d1 - d2) < margin;
 }
