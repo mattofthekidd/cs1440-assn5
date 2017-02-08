@@ -17,6 +17,12 @@ int main() {
     UtilsTester utilsTester;
     utilsTester.testSplit();
     utilsTester.testConvertToDouble();
+    utilsTester.testForNormalCases();
+    utilsTester.testForZeros();
+    utilsTester.testForNegativeNumbers();
+    utilsTester.testForMaxDouble();
+    utilsTester.testForInfinity();
+    utilsTester.testForBadMargin();
     std::cout << std::endl;
 
     std::cout << "Test Point" << std::endl;
