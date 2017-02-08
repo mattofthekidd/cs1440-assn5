@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles
+CMAKE_SOURCE_DIR = /Users/swc/tmp/cs1440s17-shared/Triangles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Test.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Test.dir/flags.make
 
 CMakeFiles/Test.dir/Testing/testMain.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Testing/testMain.cpp.o: ../Testing/testMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/Testing/testMain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/testMain.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/testMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/Testing/testMain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/testMain.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/testMain.cpp
 
 CMakeFiles/Test.dir/Testing/testMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/testMain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/testMain.cpp > CMakeFiles/Test.dir/Testing/testMain.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/testMain.cpp > CMakeFiles/Test.dir/Testing/testMain.cpp.i
 
 CMakeFiles/Test.dir/Testing/testMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/testMain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/testMain.cpp -o CMakeFiles/Test.dir/Testing/testMain.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/testMain.cpp -o CMakeFiles/Test.dir/Testing/testMain.cpp.s
 
 CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides.build: CMakeFiles/Test.dir/T
 
 CMakeFiles/Test.dir/Testing/PointTester.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Testing/PointTester.cpp.o: ../Testing/PointTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/Testing/PointTester.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/PointTester.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/Testing/PointTester.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/PointTester.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/PointTester.cpp
 
 CMakeFiles/Test.dir/Testing/PointTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/PointTester.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.cpp > CMakeFiles/Test.dir/Testing/PointTester.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/PointTester.cpp > CMakeFiles/Test.dir/Testing/PointTester.cpp.i
 
 CMakeFiles/Test.dir/Testing/PointTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/PointTester.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.cpp -o CMakeFiles/Test.dir/Testing/PointTester.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/PointTester.cpp -o CMakeFiles/Test.dir/Testing/PointTester.cpp.s
 
 CMakeFiles/Test.dir/Testing/PointTester.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Test.dir/Testing/PointTester.cpp.o.provides.build: CMakeFiles/Test.di
 
 CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o: ../Testing/EdgeTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp
 
 CMakeFiles/Test.dir/Testing/EdgeTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/EdgeTester.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp > CMakeFiles/Test.dir/Testing/EdgeTester.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp > CMakeFiles/Test.dir/Testing/EdgeTester.cpp.i
 
 CMakeFiles/Test.dir/Testing/EdgeTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/EdgeTester.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp -o CMakeFiles/Test.dir/Testing/EdgeTester.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp -o CMakeFiles/Test.dir/Testing/EdgeTester.cpp.s
 
 CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Test.dir/Testing/EdgeTester.cpp.o.provides.build: CMakeFiles/Test.dir
 
 CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o: ../Testing/TriangleTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp
 
 CMakeFiles/Test.dir/Testing/TriangleTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/TriangleTester.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp > CMakeFiles/Test.dir/Testing/TriangleTester.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp > CMakeFiles/Test.dir/Testing/TriangleTester.cpp.i
 
 CMakeFiles/Test.dir/Testing/TriangleTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/TriangleTester.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp -o CMakeFiles/Test.dir/Testing/TriangleTester.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp -o CMakeFiles/Test.dir/Testing/TriangleTester.cpp.s
 
 CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Test.dir/Testing/TriangleTester.cpp.o.provides.build: CMakeFiles/Test
 
 CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o: ../Testing/UtilsTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp
 
 CMakeFiles/Test.dir/Testing/UtilsTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/UtilsTester.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp > CMakeFiles/Test.dir/Testing/UtilsTester.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp > CMakeFiles/Test.dir/Testing/UtilsTester.cpp.i
 
 CMakeFiles/Test.dir/Testing/UtilsTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/UtilsTester.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp -o CMakeFiles/Test.dir/Testing/UtilsTester.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp -o CMakeFiles/Test.dir/Testing/UtilsTester.cpp.s
 
 CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o.provides.build: CMakeFiles/Test.di
 
 CMakeFiles/Test.dir/Point.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Test.dir/Point.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Point.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Test.dir/Point.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Point.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Point.cpp
 
 CMakeFiles/Test.dir/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Point.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp > CMakeFiles/Test.dir/Point.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Point.cpp > CMakeFiles/Test.dir/Point.cpp.i
 
 CMakeFiles/Test.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Point.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp -o CMakeFiles/Test.dir/Point.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Point.cpp -o CMakeFiles/Test.dir/Point.cpp.s
 
 CMakeFiles/Test.dir/Point.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Test.dir/Point.cpp.o.provides.build: CMakeFiles/Test.dir/Point.cpp.o
 
 CMakeFiles/Test.dir/Edge.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Edge.cpp.o: ../Edge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Test.dir/Edge.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Edge.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Test.dir/Edge.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Edge.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Edge.cpp
 
 CMakeFiles/Test.dir/Edge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Edge.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp > CMakeFiles/Test.dir/Edge.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Edge.cpp > CMakeFiles/Test.dir/Edge.cpp.i
 
 CMakeFiles/Test.dir/Edge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Edge.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp -o CMakeFiles/Test.dir/Edge.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Edge.cpp -o CMakeFiles/Test.dir/Edge.cpp.s
 
 CMakeFiles/Test.dir/Edge.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Test.dir/Edge.cpp.o.provides.build: CMakeFiles/Test.dir/Edge.cpp.o
 
 CMakeFiles/Test.dir/Triangle.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Triangle.cpp.o: ../Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Test.dir/Triangle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Triangle.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Test.dir/Triangle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Triangle.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Triangle.cpp
 
 CMakeFiles/Test.dir/Triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Triangle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp > CMakeFiles/Test.dir/Triangle.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Triangle.cpp > CMakeFiles/Test.dir/Triangle.cpp.i
 
 CMakeFiles/Test.dir/Triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Triangle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp -o CMakeFiles/Test.dir/Triangle.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Triangle.cpp -o CMakeFiles/Test.dir/Triangle.cpp.s
 
 CMakeFiles/Test.dir/Triangle.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Test.dir/Triangle.cpp.o.provides.build: CMakeFiles/Test.dir/Triangle.
 
 CMakeFiles/Test.dir/Utils.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Utils.cpp.o: ../Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Test.dir/Utils.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Utils.cpp.o -c /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Test.dir/Utils.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Utils.cpp.o -c /Users/swc/tmp/cs1440s17-shared/Triangles/Utils.cpp
 
 CMakeFiles/Test.dir/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Utils.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp > CMakeFiles/Test.dir/Utils.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/swc/tmp/cs1440s17-shared/Triangles/Utils.cpp > CMakeFiles/Test.dir/Utils.cpp.i
 
 CMakeFiles/Test.dir/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Utils.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp -o CMakeFiles/Test.dir/Utils.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/swc/tmp/cs1440s17-shared/Triangles/Utils.cpp -o CMakeFiles/Test.dir/Utils.cpp.s
 
 CMakeFiles/Test.dir/Utils.cpp.o.requires:
 
@@ -299,7 +299,7 @@ Test: CMakeFiles/Test.dir/Triangle.cpp.o
 Test: CMakeFiles/Test.dir/Utils.cpp.o
 Test: CMakeFiles/Test.dir/build.make
 Test: CMakeFiles/Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -324,6 +324,6 @@ CMakeFiles/Test.dir/clean:
 .PHONY : CMakeFiles/Test.dir/clean
 
 CMakeFiles/Test.dir/depend:
-	cd /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swc/tmp/cs1440s17-shared/Triangles /Users/swc/tmp/cs1440s17-shared/Triangles /Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug /Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug /Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Test.dir/depend
 

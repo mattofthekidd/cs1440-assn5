@@ -47,9 +47,8 @@ double convertStringToDouble(const std::string& s, bool* valid)
             result = std::stod(trimmedString, &numberOfConvertedCharacters);
             if (valid!=nullptr && numberOfConvertedCharacters==trimmedString.length())
                 *valid = true;
-            else
+            else if (numberOfConvertedCharacters!=trimmedString.length())
                 result = 0;
-
         }
         catch (std::exception)
         {

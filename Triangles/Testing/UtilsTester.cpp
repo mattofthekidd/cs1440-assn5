@@ -204,6 +204,13 @@ void UtilsTester::testConvertToDouble()
         return;
     }
 
+    s = "123.4567";
+    result = convertStringToDouble(s, nullptr);
+    if (result != 123.4567) {
+        std::cout << "Failure in convertStringToDouble(s) for s=\"" << s
+                  << "\" result=" << result << " isValid=" << isValid << std::endl;
+        return;
+    }
 }
 
 void UtilsTester::testForNormalCases()

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles
+# Install script for directory: /Users/swc/tmp/cs1440s17-shared/Triangles
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/swc/tmp/cs1440s17-shared/Triangles/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
