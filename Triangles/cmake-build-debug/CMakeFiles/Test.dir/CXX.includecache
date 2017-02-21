@@ -6,79 +6,79 @@
 
 #IncludeRegexTransform: 
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp
 cmath
 -
 complex
 -
 Edge.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
 Utils.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
 Point.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp
 string
 -
 cmath
 -
 Point.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
 Edge.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
 Utils.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
 string
 -
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp
 EdgeTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h
 iostream
 -
 cmath
 -
 ../Point.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
 ../Edge.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.cpp
 iostream
 -
 cmath
 -
 ../Point.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
 PointTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp
 TriangleTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h
 iostream
 -
 cmath
 -
 ../Triangle.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h
 ../Utils.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp
 UtilsTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h
 iostream
 -
 cmath
@@ -86,11 +86,11 @@ cmath
 limits
 -
 ../Utils.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/testMain.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/testMain.cpp
 string
 -
 iostream
@@ -98,31 +98,31 @@ iostream
 cmath
 -
 UtilsTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h
 PointTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h
 EdgeTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h
 TriangleTester.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp
 Triangle.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h
 Utils.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 cmath
 -
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h
 string
 -
 Point.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h
 Edge.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp
 algorithm
 -
 string
@@ -134,9 +134,9 @@ fstream
 cmath
 -
 Utils.h
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 
-Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h
 string
 -
 fstream

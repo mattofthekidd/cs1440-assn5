@@ -6,8 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Triangles.dir/Utils.cpp.obj"
   "Triangles.pdb"
   "Triangles.exe"
-  "Triangles.exe.manifest"
-  "libTriangles.dll.a"
+  "Triangles.lib"
 )
 
 # Per-language clean rules from dependency scanning.
