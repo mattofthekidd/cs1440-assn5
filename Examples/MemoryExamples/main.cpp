@@ -30,6 +30,8 @@ int main(int argc, char* argv[]) {
     std::cout << "\ttestString1=" << *testString1 << " (" << testString1 << ")" << std::endl;
     std::cout << "\ttestString2=" << *testString2 << " (" << testString2 << ")" << std::endl;
 
+    char* testPtr = "Test String";
+    std::cout << testPtr << " (" << std::hex << (long) testPtr << ")" << std::endl;
 
     return 0;
 }
