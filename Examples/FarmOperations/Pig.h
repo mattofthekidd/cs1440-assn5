@@ -5,12 +5,16 @@
 #ifndef FARMOPERATIONS_PIG_H
 #define FARMOPERATIONS_PIG_H
 
+#include "FarmAnimal.h"
+#include <ostream>
 
+class Pig : public FarmAnimal {
 
-class Pig {
+public:
+    Pig(const std::string& breed);
 
+    void print(std::ostream& out);
 };
-
 
 
 #endif //FARMOPERATIONS_PIG_H
