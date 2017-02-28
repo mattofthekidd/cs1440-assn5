@@ -5,9 +5,19 @@
 #ifndef FARMOPERATIONS_COW_H
 #define FARMOPERATIONS_COW_H
 
+#include "FarmAnimal.h"
 
-class Cow {
+class Cow : public FarmAnimal {
+private:
+    bool    m_isMilking = false;
 
+public:
+    Cow(const std::string& breed);
+
+    bool getIsMilking() const { return m_isMilking; }
+    void setIsMilking(bool isMilking) { m_isMilking = isMilking; }
+
+    void print(std::ostream& out);
 };
 
 
