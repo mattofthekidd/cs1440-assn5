@@ -7,33 +7,28 @@
 
 #include <ostream>
 #include <string>
+#include "Animal.h"
 #include "YearMonth.h"
 
-class FarmAnimal {
+class FarmAnimal : public Animal
+{
 private:
-    unsigned int        m_id;
-    std::string         m_breed = 0;
+    std::string         m_breed = "";
     YearMonth           m_bornOn;
-
-    static unsigned int m_nextId;
 
 protected:
     FarmAnimal();
-    FarmAnimal(const std::string& breed);
 
 public:
-    unsigned int getId() const { return m_id; }
     const std::string& getBreed() const { return m_breed; }
     void setBreed(const std::string& breed) { m_breed = breed; }
     const YearMonth& getBornOn() const { return m_bornOn; }
-    void setBornOn(const YearMonth& bornOn) { m_bornOn = bornOn; }
+    void setBornOn(const YearMonth& bornOn);
 
     int getAgeInMonths() const;
 
-    virtual void print(std::ostream& out);
-
-private:
-    static unsigned int nextId();
+    void print(std::ostream& out);
+    void save(std::ostream& out);
 };
 
 

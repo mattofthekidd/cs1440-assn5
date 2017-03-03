@@ -21,7 +21,7 @@ void YearMonthTester::testValidObjects()
     }
 
     {
-        std::cout << "\tTry the explicit constructor, YearMonth(1930, 3)" << std:: endl;
+        std::cout << "\tTry valid case: YearMonth(1930, 3)" << std:: endl;
         YearMonth ym(1930, 3);
         assert(1930==ym.getYear());
         assert(3==ym.getMonth());
@@ -29,7 +29,7 @@ void YearMonthTester::testValidObjects()
     }
 
     {
-        std::cout << "\tTry the explicit constructor, YearMonth(2015, 10)" << std:: endl;
+        std::cout << "\tTry valid case: YearMonth(2015, 10)" << std:: endl;
         YearMonth ym(2015, 10);
         assert(2015==ym.getYear());
         assert(10==ym.getMonth());
@@ -37,7 +37,7 @@ void YearMonthTester::testValidObjects()
     }
 
     {
-        std::cout << "\tTry the explicit constructor, YearMonth(610, 6)" << std:: endl;
+        std::cout << "\tTry valid case: YearMonth(610, 6)" << std:: endl;
         YearMonth ym(610, 6);
         assert(610==ym.getYear());
         assert(6==ym.getMonth());
@@ -45,7 +45,7 @@ void YearMonthTester::testValidObjects()
     }
 
     {
-        std::cout << "\tTry the copy constructor, YearMonth(1910, 7)" << std:: endl;
+        std::cout << "\tTry valid case: YearMonth(1910, 7)" << std:: endl;
         YearMonth ym1(1910, 7);
         YearMonth ym2(ym1);
 
@@ -55,7 +55,7 @@ void YearMonthTester::testValidObjects()
     }
 
     {
-        std::cout << "\tTry the copy constructor, YearMonth(2010, 4)" << std:: endl;
+        std::cout << "\tTry valid case: YearMonth(2010, 4)" << std:: endl;
         YearMonth ym1(2010, 4);
         YearMonth ym2(ym1);
 
@@ -71,7 +71,7 @@ void YearMonthTester::testInvalidObjects()
     std::cout << "Execute: testInvalidObjects" << std::endl;
 
     {
-        std::cout << "\tTry the explicity constructor for an invalid parameter, YearMonth(-1,3)" << std:: endl;
+        std::cout << "\tTry invalid case: YearMonth(-1,3)" << std:: endl;
         YearMonth ym(-1,3);
         assert(-1<=ym.getYear());
         assert(3==ym.getMonth());
@@ -79,7 +79,7 @@ void YearMonthTester::testInvalidObjects()
     }
 
     {
-        std::cout << "\tTry the explicity constructor for an invalid parameter, YearMonth(2011,0)" << std:: endl;
+        std::cout << "\tTry invalid case: YearMonth(2011,0)" << std:: endl;
         YearMonth ym(2011,0);
         assert(2011==ym.getYear());
         assert(0==ym.getMonth());
@@ -87,11 +87,10 @@ void YearMonthTester::testInvalidObjects()
     }
 
     {
-        std::cout << "\tTry the explicity constructor for an invalid parameter, YearMonth(2012,13)" << std:: endl;
+        std::cout << "\tTry invalid case: YearMonth(2012,13)" << std:: endl;
         YearMonth ym(2012,13);
         assert(2012==ym.getYear());
         assert(13==ym.getMonth());
         assert(!ym.getIsValid());
     }
-
 }

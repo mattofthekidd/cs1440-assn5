@@ -81,7 +81,7 @@ void YearMonth::validate()
 }
 
 
-void YearMonth::print(std::ostream& out)
+void YearMonth::print(std::ostream& out) const
 {
     out << m_year << "/" << m_month;
 }

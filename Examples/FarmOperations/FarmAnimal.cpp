@@ -4,17 +4,12 @@
 
 #include "FarmAnimal.h"
 
-#include <limits>
+FarmAnimal::FarmAnimal() { }
 
-unsigned int FarmAnimal::m_nextId = 1;
-
-FarmAnimal::FarmAnimal() : m_id(nextId())
+void FarmAnimal::setBornOn(const YearMonth& bornOn)
 {
-}
-
-FarmAnimal::FarmAnimal(const std::string& breed):
-        m_id(nextId()), m_breed(breed)
-{
+    m_bornOn = bornOn;
+    setIsValid(m_bornOn.getIsValid());
 }
 
 int FarmAnimal::getAgeInMonths() const
@@ -25,17 +20,21 @@ int FarmAnimal::getAgeInMonths() const
 
 void FarmAnimal::print(std::ostream& out)
 {
-    out << "#" << getId()
-        << ", breed=" << getBreed()
+    Animal::print(out);
+
+    out << ", breed=" << getBreed()
         << ", bornOn=";
 
     m_bornOn.print(out);
 }
 
-unsigned int FarmAnimal::nextId()
+void FarmAnimal::save(std::ostream& out)
 {
-    if (m_nextId==UINT32_MAX)
-        m_nextId=1;
+    Animal::save(out);
 
-    return m_nextId++;
+    out << getBreed() << ",";
+
+    m_bornOn.print(out);
+
+    out << ",";
 }

@@ -2,8 +2,8 @@
 // Created by Stephen Clyde on 2/25/17.
 //
 
-#ifndef FARMOPERATIONS_CHICKEN_H
-#define FARMOPERATIONS_CHICKEN_H
+#ifndef FARM_OPERATIONS_CHICKEN_H
+#define FARM_OPERATIONS_CHICKEN_H
 
 #include "FarmAnimal.h"
 
@@ -15,13 +15,14 @@ private:
     bool    m_isMolting = false;
 
 public:
-    Chicken(const std::string& breed);
+    Chicken(const std::string& input);
 
     bool getIsMolting() const { return m_isMolting; }
     void setIsMolting(bool isMolting) { m_isMolting = isMolting; }
 
     void print(std::ostream& out);
+    void save(std::ostream& out);
 };
 
 
-#endif //FARMOPERATIONS_CHICKEN_H
+#endif //FARM_OPERATIONS_CHICKEN_H

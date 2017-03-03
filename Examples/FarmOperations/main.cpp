@@ -1,65 +1,51 @@
 #include <iostream>
+#include "UserInterface.h"
+#include "Farm.h"
 #include "FarmAnimal.h"
 #include "Chicken.h"
 #include "Cow.h"
 #include "Pig.h"
 #include "Sheep.h"
 
-const int SIZE = 12;
+
 
 int main() {
 
-    // Temporary -- the following code will be eventually be replaced be user interface and a Farm class
-    // Create an array of FarmAnimals and print the array
+    UserInterface userInterface;
+    userInterface.run();
 
-    FarmAnimal** myAnimals = new FarmAnimal*[SIZE];
-    myAnimals[0] = new Chicken("Plymouth Rock");
-    myAnimals[1] = new Chicken("Longhorn");
-    myAnimals[2] = new Chicken("Longhorn");
+    /*
+    Farm myFarm;
 
-    Chicken* chicken = new Chicken("Plymouth Rock");
-    chicken->setIsMolting(true);
-    myAnimals[3] = chicken;
+    myFarm.addAnimal(new Chicken("Plymouth Rock,2014/4,F"));
+    myFarm.addAnimal(new Chicken("Longhorn,2015/3,T"));
+    myFarm.addAnimal(new Chicken("Longhorn,2015/4,F"));
+    myFarm.addAnimal(new Chicken("Plymouth Rock,2016/3,F"));
+    myFarm.addAnimal(new Chicken("Plymouth Rock,2016/3"));    // Bad Chicken
+    myFarm.addAnimal(new Chicken("Plymouth Rock,2016,3"));    // Bad Chicken
+    myFarm.addAnimal(new Chicken("Plymouth Rock,2016"));      // Bad Chicken
+    myFarm.addAnimal(new Chicken("Plymouth Rock"));           // Bad Chicken
+    myFarm.addAnimal(new Chicken(""));
 
-    myAnimals[4] = new Cow("Brown");
-    myAnimals[5] = new Cow("Spotted");
+    myFarm.addAnimal(new Cow(""));
+    myFarm.addAnimal(new Cow("Spotted"));
+    myFarm.addAnimal(new Cow("Holstein,2014/2,T"));
+    myFarm.addAnimal(new Cow("Angus,2015/4,F"));
+    myFarm.addAnimal(new Cow("Angus,2015/4"));                // Bad cow
 
-    Cow* cow6 = new Cow("White");
-    cow6->setIsMilking(true);
-    YearMonth bd6(2013, 4);
-    cow6->setBornOn(bd6);
-    myAnimals[6] = cow6;
+    myFarm.addAnimal(new Pig("Berkshire,2014/2"));
+    myFarm.addAnimal(new Pig("Hampshire,2015/4"));
+    myFarm.addAnimal(new Pig("Poland China,2013/3"));
+    myFarm.addAnimal(new Pig("Poland China,2013,3"));         // Bad pig
 
-    myAnimals[7] = new Cow("Brown");
+    myFarm.addAnimal(new Sheep("Merino,2014/2,2016/8"));
+    myFarm.addAnimal(new Sheep("Suffolk,2015/4,2016/7"));
+    myFarm.addAnimal(new Sheep("Texel,2013/10,2016/9"));
+    myFarm.addAnimal(new Sheep("Texel,2013/10"));             // Bad sheep
+    myFarm.addAnimal(new Sheep("Texel,2013"));                // Bad sheep
+    myFarm.addAnimal(new Sheep("Texel"));                     // Bad sheep
+    myFarm.addAnimal(new Sheep(""));                          // Bad sheep
 
-    myAnimals[8] = new Pig("Grey");
-    myAnimals[9] = new Pig("Pink");
-
-    Sheep* sheep10 = new Sheep("White");
-    YearMonth db10(2015, 2);
-    sheep10->setBornOn(db10);
-    YearMonth sheering10(2016, 8);
-    sheep10->setLastSheering(sheering10);
-    myAnimals[10] = sheep10;
-
-    Sheep* sheep11 = new Sheep("Black");
-    YearMonth db11(2016, 2);
-    sheep11->setBornOn(db10);
-    YearMonth sheering11(2016, 8);
-    sheep11->setLastSheering(sheering11);
-    myAnimals[11] = sheep11;
-
-    // Print all of the farm animals
-    for (int i=0; i<SIZE; i++)
-    {
-        myAnimals[i]->print(std::cout);
-    }
-
-    // Remove dynamically memory
-    for (int i=0; i<SIZE; i++)
-    {
-        delete myAnimals[i];
-        myAnimals[i] = nullptr;
-    }
-    return 0;
+    myFarm.print(std::cout);
+     */
 }

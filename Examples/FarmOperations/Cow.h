@@ -2,8 +2,8 @@
 // Created by Stephen Clyde on 2/27/17.
 //
 
-#ifndef FARMOPERATIONS_COW_H
-#define FARMOPERATIONS_COW_H
+#ifndef FARM_OPERATIONS_COW_H
+#define FARM_OPERATIONS_COW_H
 
 #include "FarmAnimal.h"
 
@@ -18,7 +18,8 @@ public:
     void setIsMilking(bool isMilking) { m_isMilking = isMilking; }
 
     void print(std::ostream& out);
+    void save(std::ostream& out);
 };
 
 
-#endif //FARMOPERATIONS_COW_H
+#endif //FARM_OPERATIONS_COW_H

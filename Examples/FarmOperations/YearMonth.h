@@ -31,7 +31,7 @@ public:
     bool operator>=(const YearMonth &other) const;
     bool operator>(const YearMonth &other) const;
 
-    void print(std::ostream& out);
+    void print(std::ostream& out) const;
 
 private:
     void validate();
