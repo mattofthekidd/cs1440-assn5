@@ -20,6 +20,7 @@ protected:
     bool            m_isValid = false;
 
     // TODO: Add data members to manage sub-regions
+
 private:
     static unsigned int m_nextId;
 
@@ -46,7 +47,7 @@ public:
     void setArea(double area) { m_area = area; }
     bool getIsValid() const { return m_isValid; }
 
-    // TODO: Add methods to manage subregions
+    // TODO: Add methods to manage sub-regions
 
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
