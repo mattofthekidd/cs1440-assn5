@@ -197,6 +197,7 @@ void Region::loadChildren(std::istream& in)
     while (!in.eof() && !done)
     {
         std::getline(in, line);
+        line = trim(line);
         if (line==regionDelimiter)
         {
             done = true;
