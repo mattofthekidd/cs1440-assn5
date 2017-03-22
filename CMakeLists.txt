@@ -8,12 +8,12 @@ set(SOURCE_FILES
         MenuOption.cpp MenuOption.h
         Menu.cpp Menu.h
         UserInterface.cpp UserInterface.h
-        World.cpp World.hpp
-        Nation.cpp Nation.hpp
-        State.cpp  State.hpp
-        County.cpp County.hpp
-        City.cpp City.hpp
-        Region.cpp Region.hpp
+        World.cpp World.h
+        Nation.cpp Nation.h
+        State.cpp State.h
+        County.cpp County.h
+        City.cpp City.h
+        Region.cpp Region.h
         WorldUserInterface.cpp WorldUserInterface.h
         NationUserInterface.cpp NationUserInterface.h
         StateUserInterface.cpp StateUserInterface.h

@@ -8,6 +8,7 @@
 #include "CountyUserInterface.h"
 #include "Menu.h"
 #include "Utils.h"
+#include "WorldUserInterface.h"
 
 #include <iostream>
 
@@ -94,6 +95,7 @@ void UserInterface::add()
             Region *region = Region::create(m_subRegionType, data);
             if (region != nullptr) {
                 // TODO: Add region to the m_currentRegion
+                m_currentRegion->addSubRegion(region);
                 std::cout << Region::regionLabel(m_subRegionType) << " added" << std::endl;
             } else {
                 std::cout << "Invalid data - no region created" << std::endl;
@@ -217,6 +219,7 @@ void UserInterface::remove()
         if (valid && id>0)
         {
             // TODO: Look up the region by Id and assign it to the region variable
+//            for(auto i = 0; i < )
             std::cout << "Deleted!" << std::endl;
         }
         else
@@ -246,6 +249,7 @@ void UserInterface::changeToSubRegion()
         {
             Region* region;
             // TODO: Lookup the region by Id and assign it to the region variable.
+            for(auto i = 0; i < get)
             if (region!=nullptr)
             {
                 UserInterface* nextUI = nullptr;
@@ -260,6 +264,10 @@ void UserInterface::changeToSubRegion()
                 else if (region->getType()==Region::NationType)
                 {
                     nextUI = new NationUserInterface(region);
+                }
+                else if (region->getType()==Region::WorldType)
+                {
+                    nextUI = new WorldUserInterface(region);
                 }
 
                 if (nextUI != nullptr)

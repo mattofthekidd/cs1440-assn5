@@ -6,7 +6,7 @@
 #define GEO_REGIONS_SET_OF_NATIONS_USER_INTERFACE_H
 
 #include "UserInterface.h"
-#include "backup-given-code/World.h"
+#include "World.h"
 
 class WorldUserInterface : public UserInterface
 {
