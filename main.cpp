@@ -1,12 +1,7 @@
-//
-// Created by Matthew Kidd on 3/19/17.
-//
-
 #include <fstream>
 #include <iostream>
-#include <string>
 
-#include "World.hpp"
+#include "World.h"
 #include "WorldUserInterface.h"
 
 int main()
@@ -14,22 +9,19 @@ int main()
     std::cout << "Welcome to the GeoRegions system" << std::endl << std::endl;
 
     // Create a world object
-    World world;
+    World* world;
 
     // Load if from the data file, if possible
     std::ifstream inputStream("Nations.txt");
     if (inputStream.is_open())
     {
         // Try to load the first region in the field, which should be a world, and all of it's sub-regions
-        std::string temp;
-        std::getline(inputStream, temp, ',');
-
-        Region region = Region::create(inputStream);
+        Region* region = Region::create(inputStream);
         if (region!= nullptr && region->getType()==Region::WorldType)
         {
             world = (World*) region;
             // TODO: Add an output line, similar to the sample code in the comment below
-            // std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
+             std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
         }
         else
         {
