@@ -11,7 +11,7 @@
 class WorldUserInterface : public UserInterface
 {
 public:
-    WorldUserInterface(Region* region);
+    WorldUserInterface(std::shared_ptr<Region> region);
 
 protected:
     Region::RegionType getSubRegionType();

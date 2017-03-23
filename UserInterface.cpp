@@ -12,7 +12,9 @@
 
 #include <iostream>
 
-UserInterface::UserInterface(Region* contextRegion) : m_currentRegion(contextRegion)
+
+
+UserInterface::UserInterface(std::shared_ptr<Region> contextRegion) : m_currentRegion(contextRegion)
 {
 }
 
@@ -92,9 +94,8 @@ void UserInterface::add()
         std::string data = getStringInput(
                 "Enter name,population,areas for " + Region::regionLabel(m_subRegionType) + ":");
         if (data != "") {
-            Region *region = Region::create(m_subRegionType, data);
+            std::shared_ptr<Region> region = Region::create(m_subRegionType, data);
             if (region != nullptr) {
-                // TODO: Add region to the m_currentRegion
                 m_currentRegion->addSubRegion(region);
                 std::cout << Region::regionLabel(m_subRegionType) << " added" << std::endl;
             } else {
@@ -123,8 +124,8 @@ void UserInterface::edit()
         unsigned int id = convertStringToUnsignedInt(input, &valid);
         if (valid && id>0)
         {
-            Region* region;
-            // TODO: Look the region by Id and assign it to region variable
+            std::shared_ptr<Region> region;
+            region = m_currentRegion->findRegionById(id);
             if (region!=nullptr)
             {
                 std::cout << "Editing: ";
@@ -147,7 +148,7 @@ void UserInterface::edit()
 
 }
 
-void UserInterface::editName(Region* region)
+void UserInterface::editName(std::shared_ptr<Region> region)
 {
     std::string updatedName = getStringInput("Enter an updated name (<enter> to keep current value):");
     if (updatedName!="")
@@ -161,7 +162,7 @@ void UserInterface::editName(Region* region)
     }
 }
 
-void UserInterface::editPopulation(Region* region)
+void UserInterface::editPopulation(std::shared_ptr<Region> region)
 {
     std::string population = getStringInput("Enter an updated population (<enter> to keep current value):");
     if (population!="")
@@ -185,7 +186,7 @@ void UserInterface::editPopulation(Region* region)
 
 }
 
-void UserInterface::editArea(Region* region)
+void UserInterface::editArea(std::shared_ptr<Region> region)
 {
     std::string area = getStringInput("Enter an updated area (<enter> to keep current value):");
     if (area!="")
@@ -219,7 +220,8 @@ void UserInterface::remove()
         if (valid && id>0)
         {
             // TODO: Look up the region by Id and assign it to the region variable
-//            for(auto i = 0; i < )
+            m_currentRegion->findRegionById(id).reset();
+
             std::cout << "Deleted!" << std::endl;
         }
         else
@@ -247,9 +249,10 @@ void UserInterface::changeToSubRegion()
         unsigned int id = convertStringToUnsignedInt(input, &valid);
         if (valid && id>0)
         {
-            Region* region;
+            std::shared_ptr<Region> region;
             // TODO: Lookup the region by Id and assign it to the region variable.
-            for(auto i = 0; i < get)
+            region = m_currentRegion->findRegionById(id);
+
             if (region!=nullptr)
             {
                 UserInterface* nextUI = nullptr;
@@ -265,10 +268,6 @@ void UserInterface::changeToSubRegion()
                 {
                     nextUI = new NationUserInterface(region);
                 }
-                else if (region->getType()==Region::WorldType)
-                {
-                    nextUI = new WorldUserInterface(region);
-                }
 
                 if (nextUI != nullptr)
                 {
@@ -282,5 +281,7 @@ void UserInterface::changeToSubRegion()
             }
         }
     }
-};
+}
+
+
 

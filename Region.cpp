@@ -17,8 +17,8 @@ const std::string regionDelimiter = "^^^";
 const int TAB_SIZE = 4;
 unsigned int Region::m_nextId = 0;
 
-Region *Region::create(std::istream &in) {
-    Region *region = nullptr;
+std::shared_ptr<Region> Region::create(std::istream &in) {
+    std::shared_ptr<Region> region = nullptr;
     std::string line;
     std::getline(in, line);
     if (line != "") {
@@ -29,8 +29,9 @@ Region *Region::create(std::istream &in) {
     return region;
 }
 
-Region *Region::create(const std::string &data) {
-    Region *region = nullptr;
+std::shared_ptr<Region> Region::create(const std::string &data) {
+//    Region *region = nullptr;
+    std::shared_ptr<Region> region = nullptr;
     std::string regionData;
     unsigned long commaPos = (int) data.find(",");
     if (commaPos != std::string::npos) {
@@ -47,36 +48,42 @@ Region *Region::create(const std::string &data) {
     return region;
 }
 
-Region *Region::create(RegionType regionType, const std::string &data) {
-    Region *region = nullptr;
+std::shared_ptr<Region> Region::create(RegionType regionType, const std::string &data) {
+//    Region *region = nullptr;
+            std::shared_ptr<Region> region(nullptr);
     std::string fields[3];
     if (split(data, ',', fields, 3)) {
 
         // Create the region based on type
         switch (regionType) {
             case WorldType:
-                region = new World();
+                region = std::shared_ptr<Region> (new World());
                 break;
             case NationType:
-                region = new Nation(fields);
+                region = std::unique_ptr<Region> (new Nation(fields));
+//                return region1;
                 break;
-                // TODO: Add cases for State, County, and City
             case StateType:
-                region = new State(fields);
+                region = std::unique_ptr<Region> (new State(fields));
+//                return region2;
                 break;
             case CountyType:
-                region = new County(fields);
+                region = std::unique_ptr<Region> (new County(fields));
+//                return region3;
                 break;
             case CityType:
-                region = new City(fields);
+                region = std::unique_ptr<Region> (new City(fields));
+//                return region4;
                 break;
+//            case UnknownRegionType:
+//                break;
             default:
                 break;
         }
 
         // If the region isn't valid, get rid of it
         if (region != nullptr && !region->getIsValid()) {
-            delete region;
+//            delete region;
             region = nullptr;
         }
     }
@@ -110,6 +117,10 @@ std::string Region::regionLabel(RegionType regionType) {
 
 Region::~Region() {
     // TODO: cleanup any dynamically allocated objects
+
+//    if(m_subRegion != nullptr) {
+//        m_subRegion = nullptr;
+//    }
 }
 
 std::string Region::getRegionLabel() const {
@@ -118,25 +129,22 @@ std::string Region::getRegionLabel() const {
 
 
 unsigned int Region::computeTotalPopulation() {
-    // TODO: implement computeTotalPopulation, such that the result is m_population + the total population for all sub-regions
-    //std::cout << "compute total population, delete before submission.\nAlso include iostream.";
-    auto total = 0;
+
     for(auto i = 0; i < m_subRegion.size(); i++) {
-        total += m_subRegion[i]->getPopulation();
+        if (subRegionExists(i)) {
+            m_totalPop += m_subRegion[i]->computeTotalPopulation();
+        }
     }
-    return m_population + total;
+    return m_totalPop + m_population;
 }
 
 void Region::list(std::ostream &out) {
     out << std::endl;
     out << getName() << ":" << std::endl;
 
-    // TODO: implement the loop in the list method
     for(auto i = 0; i < m_subRegion.size(); i++) {
         out << m_subRegion[i]->getId() << ", " << m_subRegion[i]->getName() << std::endl;
     }
-    // foreach subregion, print out
-    //      id    name
 }
 
 void Region::display(std::ostream &out, unsigned int displayLevel, bool showChild) {
@@ -148,8 +156,6 @@ void Region::display(std::ostream &out, unsigned int displayLevel, bool showChil
     double area = getArea();
     double density = (double) totalPopulation / area;
 
-    // TODO: compute the totalPopulation using a method
-
     out << std::setw(6) << getId() << "  "
         << getName() << ", population="
         << totalPopulation
@@ -157,14 +163,12 @@ void Region::display(std::ostream &out, unsigned int displayLevel, bool showChil
         << ", density=" << density << std::endl;
 
     if (showChild) {
-        // TODO: implement loop in display method
+
         for(auto i = 0; i < m_subRegion.size(); i++) {
-            if(m_subRegion.at(i) != nullptr && m_subRegion.at(i)->getIsValid()) {
+            if(subRegionExists(i)) {
                 m_subRegion.at(i)->display(out, displayLevel+1, true);
             }
         }
-        // foreach subregion
-        //      display that subregion at displayLevel+1 with the same showChild value
     }
 }
 
@@ -175,11 +179,8 @@ void Region::save(std::ostream &out) {
         << "," << getArea()
         << std::endl;
 
-    // TODO: implement loop in save method to save each sub-region
-    // foreach subregion,
-    //      save that region
     for(auto i = 0; i < m_subRegion.size(); i++) {
-        if(m_subRegion.at(i) != nullptr && m_subRegion.at(i)->getIsValid()) {
+        if(subRegionExists(i)) {
             m_subRegion.at(i)->save(out);
         }
     }
@@ -208,9 +209,8 @@ void Region::loadChildren(std::istream &in) {
         if (line == regionDelimiter) {
             done = true;
         } else {
-            Region *child = create(line);
+            std::shared_ptr<Region> child = create(line);
             if (child != nullptr) {
-                // TODO: Add the new sub-region to this region
                 m_subRegion.push_back(child);
                 child->loadChildren(in);
             }
@@ -225,15 +225,34 @@ unsigned int Region::getNextId() {
     return m_nextId++;
 }
 
-void Region::addSubRegion(Region* child) {
+void Region::addSubRegion(std::shared_ptr<Region> child) {
     m_subRegion.push_back(child);
 }
 
 int Region::getSubRegionCount() {
-//    while(m_id < m_nextId) {
-//        getNextId();
-//    }
-    return m_nextId-1;
+    auto p = 0;
+    for(auto i = 0; i < m_subRegion.size(); i++) {
+        p++;
+        if(subRegionExists(i)) {
+            p += m_subRegion[i]->getSubRegionCount();
+        }
+    }
+    return p;
+}
+
+bool Region::subRegionExists(int pos) {
+    return m_subRegion.at(pos) != nullptr && m_subRegion.at(pos)->getIsValid();
+}
+
+std::shared_ptr<Region> & Region::findRegionById(int id) {
+    for(auto i = 0; i < m_subRegion.size(); i++) {
+        if(m_subRegion[i]->getId() == id) {
+           return m_subRegion.at(i);
+        }
+        else if(subRegionExists(i)) {
+            m_subRegion[i]->findRegionById(id);
+        }
+    }
 }
 
 

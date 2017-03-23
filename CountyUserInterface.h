@@ -10,7 +10,7 @@
 class CountyUserInterface : public UserInterface
 {
 public:
-    CountyUserInterface(Region* region);
+    CountyUserInterface(std::shared_ptr<Region> region);
 
 protected:
     Region::RegionType getSubRegionType();

@@ -10,7 +10,7 @@
 class StateUserInterface : public UserInterface
 {
 public:
-    StateUserInterface(Region* contextRegion);
+    StateUserInterface(std::shared_ptr<Region> contextRegion);
 
     Region::RegionType getSubRegionType();
     void setupMenu();

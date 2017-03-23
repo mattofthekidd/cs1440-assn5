@@ -12,9 +12,9 @@ class Region {
 public:
     typedef enum RegionType { UnknownRegionType, WorldType, NationType, StateType, CountyType, CityType } x;
 //--------------
-    static Region* create(std::istream &in);
-    static Region* create(const std::string& data);
-    static Region* create(RegionType regionType, const std::string& data);
+    static std::shared_ptr<Region> create(std::istream &in);
+    static std::shared_ptr<Region> create(const std::string& data);
+    static std::shared_ptr<Region> create(RegionType regionType, const std::string& data);
     static std::string regionLabel(RegionType regionType);
 //--------------
     ~Region();
@@ -30,7 +30,8 @@ public:
     bool getIsValid() const { return m_isValid; }
 
     // TODO: Add methods to manage sub-regions
-    void addSubRegion(Region*);
+    void addSubRegion(std::shared_ptr<Region>);
+    bool subRegionExists(int pos);
     int getSubRegionCount();
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
@@ -38,6 +39,8 @@ public:
     void list(std::ostream& out);
     void display(std::ostream& out, unsigned int displayLevel, bool showChild);
     void save(std::ostream& out);
+
+    std::shared_ptr<Region> & findRegionById(int id);
 
 protected:
     unsigned int    m_id = 0;
@@ -48,8 +51,8 @@ protected:
     bool            m_isValid = false;
 
     // TODO: Add data members to manage sub-regions
-    std::vector<Region*> m_subRegion;
-    int m_count;
+    unsigned int m_totalPop = 0;
+    std::vector<std::shared_ptr<Region>> m_subRegion;
 
 //--------------
     Region();

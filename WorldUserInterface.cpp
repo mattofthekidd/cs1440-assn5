@@ -5,7 +5,7 @@
 #include "WorldUserInterface.h"
 #include "Menu.h"
 
-WorldUserInterface::WorldUserInterface(Region* region) : UserInterface(region)
+WorldUserInterface::WorldUserInterface(std::shared_ptr<Region> region) : UserInterface(region)
 {
 }
 

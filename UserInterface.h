@@ -9,15 +9,16 @@
 #include <string>
 
 class Menu;
+class Region;
 
 class UserInterface {
 protected:
-    Region*   m_currentRegion = nullptr;
+    std::shared_ptr<Region>   m_currentRegion = nullptr;
     Menu*     m_menu = nullptr;
     Region::RegionType  m_subRegionType;
 
 public:
-    UserInterface(Region* contextRegion);
+    UserInterface(std::shared_ptr<Region> contextRegion);
     ~UserInterface();
     void run();
 
@@ -28,9 +29,9 @@ protected:
     virtual void add();
     virtual void list();
     virtual void edit();
-    virtual void editName(Region* region);
-    virtual void editPopulation(Region* region);
-    virtual void editArea(Region* region);
+    virtual void editName(std::shared_ptr<Region> region);
+    virtual void editPopulation(std::shared_ptr<Region> region);
+    virtual void editArea(std::shared_ptr<Region> region);
     virtual void remove();
     virtual void print();
     virtual void changeToSubRegion();

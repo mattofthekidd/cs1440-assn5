@@ -9,7 +9,7 @@
 
 #include <iostream>
 
-StateUserInterface::StateUserInterface(Region* contextRegion) :
+StateUserInterface::StateUserInterface(std::shared_ptr<Region> contextRegion) :
         UserInterface(contextRegion)
 {
 

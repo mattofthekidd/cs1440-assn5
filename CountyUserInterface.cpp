@@ -5,7 +5,7 @@
 #include "CountyUserInterface.h"
 #include "Menu.h"
 
-CountyUserInterface::CountyUserInterface(Region* region) : UserInterface(region)
+CountyUserInterface::CountyUserInterface(std::shared_ptr<Region> region) : UserInterface(region)
 {
 }
 

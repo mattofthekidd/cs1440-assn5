@@ -5,7 +5,7 @@
 #include "NationUserInterface.h"
 #include "Menu.h"
 
-NationUserInterface::NationUserInterface(Region* contextRegion) :
+NationUserInterface::NationUserInterface(std::shared_ptr<Region> contextRegion) :
         UserInterface(contextRegion)
 {
 

@@ -10,7 +10,7 @@
 class NationUserInterface : public UserInterface
 {
 public:
-    NationUserInterface(Region* contextRegion);
+    NationUserInterface(std::shared_ptr<Region> contextRegion);
 
     Region::RegionType getSubRegionType();
     void setupMenu();

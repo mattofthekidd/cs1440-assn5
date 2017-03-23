@@ -4,35 +4,28 @@
 #include "World.h"
 #include "WorldUserInterface.h"
 
-int main()
-{
+int main() {
     std::cout << "Welcome to the GeoRegions system" << std::endl << std::endl;
 
     // Create a world object
-    World* world;
+    std::shared_ptr<Region> world;
 
     // Load if from the data file, if possible
     std::ifstream inputStream("Nations.txt");
-    if (inputStream.is_open())
-    {
+    if (inputStream.is_open()) {
         // Try to load the first region in the field, which should be a world, and all of it's sub-regions
-        Region* region = Region::create(inputStream);
-        if (region!= nullptr && region->getType()==Region::WorldType)
-        {
-            world = (World*) region;
-            // TODO: Add an output line, similar to the sample code in the comment below
-             std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
-        }
-        else
-        {
-            world = new World();
+        std::shared_ptr<Region> region = Region::create(inputStream);
+        if (region != nullptr && region->getType() == Region::WorldType) {
+            world = region;
+            std::cout << "Loaded a world and " << world->getSubRegionCount() << " nations from Nations.txt"
+                      << std::endl;
+        } else {
+            world = std::shared_ptr<Region> (new World());
             std::cout << "Problem loading Nation.txt -- created a new world" << std::endl;
         }
         inputStream.close();
-    }
-    else
-    {
-        world = new World();
+    } else {
+        world = std::shared_ptr<Region> (new World());
         std::cout << "Created a new world" << std::endl;
     }
 
@@ -42,8 +35,7 @@ int main()
 
     // Save the world!
     std::ofstream outputStream("Nations.txt");
-    if (outputStream.is_open())
-    {
+    if (outputStream.is_open()) {
         world->save(outputStream);
     }
     outputStream.close();
