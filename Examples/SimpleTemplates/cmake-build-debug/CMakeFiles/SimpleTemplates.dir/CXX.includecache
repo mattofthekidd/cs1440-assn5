@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/SimpleTemplates/MaxFunctions.cpp
+
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/SimpleTemplates/MaxTemplate.h
+
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/SimpleTemplates/main.cpp
+iostream
+-
+MaxTemplate.h
+/Users/swc/Dropbox/UnderGit/cs1440s17-shared/Examples/SimpleTemplates/MaxTemplate.h
+
