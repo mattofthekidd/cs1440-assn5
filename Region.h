@@ -33,10 +33,10 @@ public:
     int const getSubRegionSize() const { return m_subRegion.size(); }
     int const getTotalPopAtLevel() const { return m_totalPop; }
     void addSubRegion(std::shared_ptr<Region>);
+    void deleteSubRegion(int id);
     bool subRegionExists(int pos);
     int getSubRegionCount();
     std::shared_ptr<Region> getSubRegionByIndex(int index);
-    std::vector<std::shared_ptr<Region>> const getVector() const {return m_subRegion;}
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
 

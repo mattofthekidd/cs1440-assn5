@@ -30,7 +30,6 @@ std::shared_ptr<Region> Region::create(std::istream &in) {
 }
 
 std::shared_ptr<Region> Region::create(const std::string &data) {
-//    Region *region = nullptr;
     std::shared_ptr<Region> region = nullptr;
     std::string regionData;
     unsigned long commaPos = (int) data.find(",");
@@ -49,41 +48,33 @@ std::shared_ptr<Region> Region::create(const std::string &data) {
 }
 
 std::shared_ptr<Region> Region::create(RegionType regionType, const std::string &data) {
-//    Region *region = nullptr;
-            std::shared_ptr<Region> region(nullptr);
+    std::shared_ptr<Region> region(nullptr);
     std::string fields[3];
     if (split(data, ',', fields, 3)) {
 
         // Create the region based on type
         switch (regionType) {
             case WorldType:
-                region = std::shared_ptr<Region> (new World());
+                region = std::shared_ptr<Region>(new World());
                 break;
             case NationType:
-                region = std::unique_ptr<Region> (new Nation(fields));
-//                return region1;
+                region = std::unique_ptr<Region>(new Nation(fields));
                 break;
             case StateType:
-                region = std::unique_ptr<Region> (new State(fields));
-//                return region2;
+                region = std::unique_ptr<Region>(new State(fields));
                 break;
             case CountyType:
-                region = std::unique_ptr<Region> (new County(fields));
-//                return region3;
+                region = std::unique_ptr<Region>(new County(fields));
                 break;
             case CityType:
-                region = std::unique_ptr<Region> (new City(fields));
-//                return region4;
+                region = std::unique_ptr<Region>(new City(fields));
                 break;
-//            case UnknownRegionType:
-//                break;
             default:
                 break;
         }
 
         // If the region isn't valid, get rid of it
         if (region != nullptr && !region->getIsValid()) {
-//            delete region;
             region = nullptr;
         }
     }
@@ -116,11 +107,6 @@ std::string Region::regionLabel(RegionType regionType) {
 }
 
 Region::~Region() {
-    // TODO: cleanup any dynamically allocated objects
-
-//    if(m_subRegion != nullptr) {
-//        m_subRegion = nullptr;
-//    }
 }
 
 std::string Region::getRegionLabel() const {
@@ -130,7 +116,7 @@ std::string Region::getRegionLabel() const {
 
 unsigned int Region::computeTotalPopulation() {
 
-    for(auto i = 0; i < m_subRegion.size(); i++) {
+    for (auto i = 0; i < m_subRegion.size(); i++) {
         if (subRegionExists(i)) {
             m_totalPop += m_subRegion[i]->computeTotalPopulation();
         }
@@ -142,7 +128,7 @@ void Region::list(std::ostream &out) {
     out << std::endl;
     out << getName() << ":" << std::endl;
 
-    for(auto i = 0; i < m_subRegion.size(); i++) {
+    for (auto i = 0; i < m_subRegion.size(); i++) {
         out << m_subRegion[i]->getId() << ", " << m_subRegion[i]->getName() << std::endl;
     }
 }
@@ -165,9 +151,9 @@ void Region::display(std::ostream &out, unsigned int displayLevel, bool showChil
 
     if (showChild) {
 
-        for(auto i = 0; i < m_subRegion.size(); i++) {
-            if(subRegionExists(i)) {
-                m_subRegion.at(i)->display(out, displayLevel+1, true);
+        for (auto i = 0; i < m_subRegion.size(); i++) {
+            if (subRegionExists(i)) {
+                m_subRegion.at(i)->display(out, displayLevel + 1, true);
             }
         }
     }
@@ -180,8 +166,8 @@ void Region::save(std::ostream &out) {
         << "," << getArea()
         << std::endl;
 
-    for(auto i = 0; i < m_subRegion.size(); i++) {
-        if(subRegionExists(i)) {
+    for (auto i = 0; i < m_subRegion.size(); i++) {
+        if (subRegionExists(i)) {
             m_subRegion.at(i)->save(out);
         }
     }
@@ -232,9 +218,9 @@ void Region::addSubRegion(std::shared_ptr<Region> child) {
 
 int Region::getSubRegionCount() {
     auto p = 0;
-    for(auto i = 0; i < m_subRegion.size(); i++) {
+    for (auto i = 0; i < m_subRegion.size(); i++) {
         p++;
-        if(subRegionExists(i)) {
+        if (subRegionExists(i)) {
             p += m_subRegion[i]->getSubRegionCount();
         }
     }
@@ -245,19 +231,27 @@ bool Region::subRegionExists(int pos) {
     return m_subRegion.at(pos) != nullptr && m_subRegion.at(pos)->getIsValid();
 }
 
-std::shared_ptr<Region> & Region::findRegionById(int id) {
-    for(auto i = 0; i < m_subRegion.size()-1; i++) {
-        if(m_subRegion[i]->getId() == id) {
-           return m_subRegion.at(i);
-        }
-        else if(subRegionExists(i)) {
-            m_subRegion[i]->findRegionById(id);
+std::shared_ptr<Region> &Region::findRegionById(int id) {
+    for (auto i = 0; i < m_subRegion.size(); i++) {
+        if (m_subRegion[i]->getId() == id) {
+            return m_subRegion.at(i);
         }
     }
 }
 
 std::shared_ptr<Region> Region::getSubRegionByIndex(int index) {
     return m_subRegion[index];
+}
+
+void Region::deleteSubRegion(int id) {
+    for (auto i = 0; i < m_subRegion.size(); i++) {
+        if (m_subRegion[i]->getId() == id) {
+            //deletes the children
+            m_subRegion[i]->~Region();
+            //deletes the references
+            m_subRegion.erase(m_subRegion.begin() + i);
+        }
+    }
 }
 
 

@@ -445,7 +445,6 @@ void RegionTester::testGettersAndSetters()
 void RegionTester::testSubRegions()
 {
     std::cout << "RegionTester::testSubRegions" << std::endl;
-    // TODO: Add test cases for managing sub-regions
     std::string inputFile = "SampleData/sampleData-3.txt";
     std::ifstream inputStream(inputFile);
     std::shared_ptr<Region> region = Region::create(inputStream);
@@ -466,8 +465,6 @@ void RegionTester::testSubRegions()
 void RegionTester::testComputeTotalPopulation()
 {
     std::cout << "RegionTester::testComputeTotalPopulation" << std::endl;
-
-    // TODO: Add test cases for computeTotalPopulation
     std::string inputFile = "SampleData/sampleData-4.txt";
     std::ifstream inputStream(inputFile);
     std::shared_ptr<Region> region = Region::create(inputStream);

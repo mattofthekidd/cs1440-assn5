@@ -219,9 +219,7 @@ void UserInterface::remove()
         unsigned int id = convertStringToUnsignedInt(input, &valid);
         if (valid && id>0)
         {
-            // TODO: Look up the region by Id and assign it to the region variable
-            m_currentRegion->findRegionById(id).reset();
-
+            m_currentRegion->deleteSubRegion(id);
             std::cout << "Deleted!" << std::endl;
         }
         else
@@ -250,7 +248,6 @@ void UserInterface::changeToSubRegion()
         if (valid && id>0)
         {
             std::shared_ptr<Region> region;
-            // TODO: Lookup the region by Id and assign it to the region variable.
             region = m_currentRegion->findRegionById(id);
 
             if (region!=nullptr)

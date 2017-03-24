@@ -26,5 +26,5 @@ int main() {
     regionTester.testGettersAndSetters();
     regionTester.testSubRegions();
     regionTester.testComputeTotalPopulation();
-    return 0;
+
 }
