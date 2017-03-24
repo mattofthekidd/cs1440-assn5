@@ -153,6 +153,7 @@ void Region::display(std::ostream &out, unsigned int displayLevel, bool showChil
     }
 
     unsigned totalPopulation = computeTotalPopulation();
+    m_totalPop = totalPopulation;
     double area = getArea();
     double density = (double) totalPopulation / area;
 
@@ -245,7 +246,7 @@ bool Region::subRegionExists(int pos) {
 }
 
 std::shared_ptr<Region> & Region::findRegionById(int id) {
-    for(auto i = 0; i < m_subRegion.size(); i++) {
+    for(auto i = 0; i < m_subRegion.size()-1; i++) {
         if(m_subRegion[i]->getId() == id) {
            return m_subRegion.at(i);
         }
@@ -253,6 +254,10 @@ std::shared_ptr<Region> & Region::findRegionById(int id) {
             m_subRegion[i]->findRegionById(id);
         }
     }
+}
+
+std::shared_ptr<Region> Region::getSubRegionByIndex(int index) {
+    return m_subRegion[index];
 }
 
 

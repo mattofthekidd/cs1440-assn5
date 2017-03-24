@@ -30,9 +30,13 @@ public:
     bool getIsValid() const { return m_isValid; }
 
     // TODO: Add methods to manage sub-regions
+    int const getSubRegionSize() const { return m_subRegion.size(); }
+    int const getTotalPopAtLevel() const { return m_totalPop; }
     void addSubRegion(std::shared_ptr<Region>);
     bool subRegionExists(int pos);
     int getSubRegionCount();
+    std::shared_ptr<Region> getSubRegionByIndex(int index);
+    std::vector<std::shared_ptr<Region>> const getVector() const {return m_subRegion;}
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
 
@@ -63,6 +67,7 @@ protected:
     static unsigned int getNextId();
 
     // TODO: add whatever other helper methods you might need
+
 
 private:
     static unsigned int m_nextId;
